@@ -1,1 +1,2 @@
-
+1、学习IdentityServer4 Implicit Flow 在谷歌浏览器，如果不使用https方式，将无法跳转，Edge下面确可以使用http，此问题可能是cookies设置有问题
+2、.net core 3.0中使用IdentityServer4, 用OpenConnectId必须使用https方式，待后续测试看看 
