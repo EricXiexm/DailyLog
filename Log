@@ -4,5 +4,7 @@
 
 2、.net core 3.0中使用IdentityServer4, 用OpenConnectId必须使用https方式，待后续测试看看 
 
-3、Custom scaffold templates in ASP.NET Core模板位置一般在vs2019 C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.visualstudio.web.codegenerators.mvc\2.0.0\Templates
+3、Custom scaffold templates in ASP.NET Core:
+vs2019模板位置一般在 C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.visualstudio.web.codegenerators.mvc\2.0.0\Templates
+或者 C:\Users\{user}\.nuget\packages\microsoft.visualstudio.web.codegenerators.mvc\3.0.0-preview7-19378-04\Templates
 
