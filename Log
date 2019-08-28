@@ -8,3 +8,10 @@
 vs2019模板位置一般在 C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.visualstudio.web.codegenerators.mvc\2.0.0\Templates
 或者 C:\Users\{user}\.nuget\packages\microsoft.visualstudio.web.codegenerators.mvc\3.0.0-preview7-19378-04\Templates
 
+4、.net core 3.0 默认裁剪Async后缀（Async suffix for controller action names will be trimmed by default）
+https://github.com/aspnet/AspNetCore/issues/8998
+配置如下：
+services.AddMvc(options =>
+{
+   options.SuppressAsyncSuffixInActionNames = false; 
+});
