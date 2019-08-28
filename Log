@@ -15,3 +15,5 @@ services.AddMvc(options =>
 {
    options.SuppressAsyncSuffixInActionNames = false; 
 });
+
+5、通常都会选择把nginx的配置文件放在docker宿主机上,然后在宿主机完成配置的修改后reload容器中的nginx就好了 docker exec -i [nginx容器名/id] nginx -s reload
