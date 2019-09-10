@@ -1,0 +1,7 @@
+Framework .NET CORE 3.0 版本3.0.0-preview9.19423.6
+1、使用webapi开发，版本实现了System.Text.Json的格式化程序json的功能,可以使用此空间下的功能来处理json相关内容，性能比Newtosoft.Json好。
+2、System.Text.Json有些功能不适用，需要使用Newtosoft.Json的格式化程序，可以安装Microsoft.AspNetCore.Mvc.NewtonsoftJson NuGet，
+并在Startup中配置以支持Newtosoft.Json的功能。
+services.AddMvc()
+    .AddNewtonsoftJson();
+3、详见官方文档https://docs.microsoft.com/en/aspnet/core/web-api/advanced/formatting?view=aspnetcore-3.0
