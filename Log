@@ -3,7 +3,12 @@
 1、学习IdentityServer4 Implicit Flow 在谷歌浏览器，如果不使用https方式，将无法跳转，Edge下面确可以使用http，此问题可能是cookies设置有问题
 
 2、.net core 3.0中使用IdentityServer4, 用OpenConnectId必须使用https方式，待后续测试看看 
-
+ --使用 aspnet core identity 使用https，可以登录成功并跳转页面， 如果使用http,登录可以成功并set-cookie，但跳转页面时cookie并没有设置成功
+ --尝试解决：1）设置CookieOptions 的Secure为false,用https登录成功，可以正常跳转
+ --         2）然后再切换到http，登录成功跳转也会成功 
+ --         3）取消设置CookieOptions的Secure，https和http的登录跳转都会正常（原因不详）
+ --         4）问题产生因为set-cookie后，跳转页面时无法set-cookie的cookie并没有设置成功
+ 
 3、Custom scaffold templates in ASP.NET Core:
 vs2019模板位置一般在 C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.visualstudio.web.codegenerators.mvc\2.0.0\Templates
 或者 C:\Users\{user}\.nuget\packages\microsoft.visualstudio.web.codegenerators.mvc\3.0.0-preview7-19378-04\Templates
